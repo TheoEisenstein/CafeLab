@@ -8,8 +8,16 @@
 </head>
 <body>
 
-	<p>
-	${ firstname }
+	<p> Welcome! 
+	${ users.firstName }
+	${ users.lastName }
+	</p>
+	
+	<p>This is where your social security number would be...
+	<!--  ${ users.socialSecurity }-->
+	</p>
+	<p> Shoe size: 
+	${ users.shoeSize }
 	</p>
 
 </body>

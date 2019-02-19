@@ -9,22 +9,26 @@
 </head>
 <body>
 	
-	<form action="/user-registration-result">
+	<form action="/user-registration-result" method="post">
 		<table>
 		
 		<!-- Add four data per row possibly -->
 		<tr>
-			<label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname">
-	
-			<label for="lastname">Last Name:</label> <input id="lastname name">
+			<td><label for="firstName">First Name:</label> <input type="text" pattern="[A-Z][a-z]*" name="firstName" id="firstName" required>
+			</td>
+			<td>
+			<label for="lastName">Last Name:</label> <input type="text" name="lastName" pattern="[A-Z][a-z]*" id="lastName">
+			</td>
 		</tr>
 		
 		
 		<tr>
-			<label for="SSN">SSN#:</label> <input id="firstname name">
-	
-			<label for="shoesize"></label> <input id="lastname name">
-			
+		<td>
+			<label for="socialSecurity">SSN#:</label> <input type="password" name="socialSecurity" id="socialSecurity">
+		</td>
+		<td>
+			<label for="shoeSize">Shoe Size: </label> <input type="number" name="shoeSize" id="shoeSize">
+			</td>
 			
 		</tr>
 	

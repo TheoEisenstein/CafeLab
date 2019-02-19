@@ -1,5 +1,6 @@
 package com.cafecalledencapsulation.cafe;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -19,14 +20,16 @@ public class CafeController {
 		return  new ModelAndView("user-registration");
 		 
 	}
-	@RequestMapping("/user-registration-result")
-	public ModelAndView showUserRegistrationResult(
-			@RequestParam("firstname") String firstname)
-			 {
-		
-		ModelAndView mav = new ModelAndView("user-registration-result");
-		mav.addObject("firstname", firstname);
-		return mav;
-		 
+
+	
+	
+	@RequestMapping
+	public ModelAndView submitUserReg(Users aUser) {
+		return new ModelAndView("/user-registration-result");
+	}
+	
+	@PostMapping
+	public ModelAndView submitUserRegSecure(Users aUser) {
+		return new ModelAndView("/user-registration-result");
 	}
 }
