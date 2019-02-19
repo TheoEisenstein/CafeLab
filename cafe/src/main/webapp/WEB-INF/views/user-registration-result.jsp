@@ -19,6 +19,11 @@
 	<p> Shoe size: 
 	${ users.shoeSize }
 	</p>
+	<p>Roast Type: ${ users.roast }
+	</p>
+	<p>Do you have your cup? ${ users.myOwn }
+	
+	</p>
 
 </body>
 </html>

@@ -33,8 +33,18 @@
 		</tr>
 	
 	
-	
 	</table>
+	
+	<fieldset>
+  <legend>Coffee Profile</legend>
+  Coffee Type <input type="radio" name="roast" value="Light" value="Medium" value="Hard" >Light<br>
+ <input type="radio" name="roast" value="Medium" value="Hard" >  Medium<br>
+ <input type="radio" name="roast" value="Hard" > Hard <br>
+
+  Did you bring your own cup? <br> <input type="radio" name="myOwn" value="Kill The Environment"> My Own<br>
+  <input type="radio" name="myOwn" value="Kill Environment"> Kill Environment<br>
+ </fieldset>
+ 
 	<button>Submit</button>
 	</form>
 	

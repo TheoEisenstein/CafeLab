@@ -6,6 +6,8 @@ public class Users {
 	private String lastName;
 	private String socialSecurity;
 	private int shoeSize;
+	private String Roast;
+	private String MyOwn;
 	
 	public Users() {
 		
@@ -13,6 +15,22 @@ public class Users {
 
 	public String getFirstName() {
 		return firstName;
+	}
+
+	public String getRoast() {
+		return Roast;
+	}
+
+	public void setRoast(String roast) {
+		Roast = roast;
+	}
+
+	public String getMyOwn() {
+		return MyOwn;
+	}
+
+	public void setMyOwn(String myOwn) {
+		MyOwn = myOwn;
 	}
 
 	public void setFirstName(String firstName) {
